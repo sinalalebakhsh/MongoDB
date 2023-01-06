@@ -20,3 +20,12 @@ touch text.txt;
 
 Print All Environment Variables:
 printenv
+
+also for show path:
+printenv PATH
+
+Or:
+echo $PATH
+
+Session Variables: this Variable is only available in the current terminal session.
+export DATA_USER=sinalalebakhsh

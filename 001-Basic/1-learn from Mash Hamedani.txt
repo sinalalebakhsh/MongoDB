@@ -1,2 +1,4 @@
 Start:2023.1.6
 
+This Command run without stop:
+1. mkdir test ; cd test ; echo Done

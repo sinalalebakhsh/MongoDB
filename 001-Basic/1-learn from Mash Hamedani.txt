@@ -11,3 +11,9 @@ ls /bin | less
 
 just show it 15 lines in first result:
 ls /bin | head -n 15
+
+Rest up the mulltiple commands, and dont be a long: 
+mkdir Sina;\
+cd Sina;\
+echo Done;\
+touch text.txt;

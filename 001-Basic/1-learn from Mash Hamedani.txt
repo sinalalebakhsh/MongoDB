@@ -1,4 +1,7 @@
 Start:2023.1.6
 
 This Command run without stop:
-1. mkdir test ; cd test ; echo Done
+mkdir test ; cd test ; echo Done
+
+If this command fails, the other commands will not get executed:
+mkdir test && cd test && echo Done

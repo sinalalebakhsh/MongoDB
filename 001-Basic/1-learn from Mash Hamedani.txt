@@ -17,3 +17,6 @@ mkdir Sina;\
 cd Sina;\
 echo Done;\
 touch text.txt;
+
+Print All Environment Variables:
+printenv

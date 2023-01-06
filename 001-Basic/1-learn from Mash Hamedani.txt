@@ -8,3 +8,6 @@ mkdir test && cd test && echo Done
 
 Pip first coomand and result give it to seccond:
 ls /bin | less 
+
+just show it 15 lines in first result:
+ls /bin | head -n 15

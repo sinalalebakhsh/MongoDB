@@ -5,3 +5,6 @@ mkdir test ; cd test ; echo Done
 
 If this command fails, the other commands will not get executed:
 mkdir test && cd test && echo Done
+
+Pip first coomand and result give it to seccond:
+ls /bin | less 

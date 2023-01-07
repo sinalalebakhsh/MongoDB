@@ -82,3 +82,10 @@ Kimia:x:1000:
 ariya:x:1001:
 developers:x:1002:
 root@idUbuntu:/# 
+
+for add user in a group:
+root@idUbuntu:/# usermod -G developers Kimia
+root@idUbuntu:/# cat /etc/passwd | grep Kimia
+root@idUbuntu:/# grep Kimia /etc/passwd
+Kimia:x:1000:1000::/home/Kimia:/bin/sh
+root@idUbuntu:/# 

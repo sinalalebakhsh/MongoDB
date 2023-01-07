@@ -46,8 +46,28 @@ root@idUbuntu:/# kill id-number
 Managing Users:
 root@idUbuntu:/# useradd -m Kimia
 root@idUbuntu:/# cat /etc/passwd
-Result:
+RESULT:
 ... [In here is another users]
 Kimia:x:1000:1000::/home/Kimia:/bin/sh
 
 
+useradd VS. adduser
+RESULT:
+root@idUbuntu:/# adduser Linaa
+Adding user `Linaa' ...
+Adding new group `Linaa' (1001) ...
+Adding new user `Linaa' (1001) with group `Linaa' ...
+Creating home directory `/home/Linaa' ...
+Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for Linaa
+Enter the new value, or press ENTER for the default
+        Full Name []: Linaa Lalebakhsh
+        Room Number []: 123456
+        Work Phone []: 1234567
+        Home Phone []: 12345678
+        Other []: 
+Is the information correct? [Y/n] y
+root@idUbuntu:/# 

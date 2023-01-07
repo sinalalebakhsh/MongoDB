@@ -71,3 +71,6 @@ Enter the new value, or press ENTER for the default
         Other []: 
 Is the information correct? [Y/n] y
 root@idUbuntu:/# 
+
+
+Managing Groups:

@@ -89,3 +89,11 @@ root@idUbuntu:/# cat /etc/passwd | grep Kimia
 root@idUbuntu:/# grep Kimia /etc/passwd
 Kimia:x:1000:1000::/home/Kimia:/bin/sh
 root@idUbuntu:/# 
+OR:
+root@idUbuntu:/# cat /etc/passwd | grep Kimia 
+Kimia:x:1000:1000::/home/Kimia:/bin/sh
+
+for searching a user, What groups is she a member of?
+root@idUbuntu:/# groups Kimia
+Kimia : Kimia developers
+root@idUbuntu:/# 

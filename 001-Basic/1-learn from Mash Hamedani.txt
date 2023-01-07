@@ -118,3 +118,6 @@ RESULT
 ariya@idDocker:/home$ ./deploy.sh
 bash: ./deploy.sh: Permission denied
 ariya@idDocker:/home$ 
+
+SLOTION:
+root@idUbuntu:/home# chmod o+x deploy.sh 

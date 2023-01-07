@@ -100,21 +100,21 @@ root@idUbuntu:/#
 
 File Permissions
 root@idUbuntu:/# cd /home/
-
 root@idUbuntu:/home# echo echo hello > deploy.sh
-
 root@idUbuntu:/home# cat deploy.sh 
 echo hello
-
 root@idUbuntu:/home# ls -l
 -rw-r--r-- 1 root  root    11 Jan  7 20:14 deploy.sh
-
 root@idUbuntu:/home# ./deploy.sh
 bash: ./deploy.sh: Permission denied
-
 root@idUbuntu:/home# chmod u+x deploy.sh 
-
 root@idUbuntu:/home# ls -l
 -rwxr--r-- 1 root  root    11 Jan  7 20:14 deploy.sh
 root@idUbuntu:/home# ./deploy.sh
 hello
+
+If other user want to execute this: 
+RESULT
+ariya@idDocker:/home$ ./deploy.sh
+bash: ./deploy.sh: Permission denied
+ariya@idDocker:/home$ 

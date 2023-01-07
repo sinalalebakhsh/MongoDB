@@ -1,47 +1,47 @@
 Start:2023.1.6
 
 This Command run without stop:
-mkdir test ; cd test ; echo Done
+root@idUbuntu:/# mkdir test ; cd test ; echo Done
 
 If this command fails, the other commands will not get executed:
-mkdir test && cd test && echo Done
+root@idUbuntu:/# mkdir test && cd test && echo Done
 
 Pip first coomand and result give it to seccond:
-ls /bin | less 
+root@idUbuntu:/# ls /bin | less 
 
 just show it 15 lines in first result:
-ls /bin | head -n 15
+root@idUbuntu:/# ls /bin | head -n 15
 
 Rest up the mulltiple commands, and dont be a long: 
-mkdir Sina;\
+root@idUbuntu:/# mkdir Sina;\
 cd Sina;\
 echo Done;\
 touch text.txt;
 
 Print All Environment Variables:
-printenv
+root@idUbuntu:/# printenv
 
 also for show path:
-printenv PATH
+root@idUbuntu:/# printenv PATH
 
 Or:
-echo $PATH
+root@idUbuntu:/# echo $PATH
 
 Session Variables: this Variable is only available in the current terminal session.
-export DATA_USER=sinalalebakhsh
+root@idUbuntu:/# export DATA_USER=sinalalebakhsh
 
 
 Scan Process:
-ps
+root@idUbuntu:/# ps
 
 Sleep with maintain terminal for continue: we have to use &
-sleep 100 &
+root@idUbuntu:/# sleep 100 &
 
 for stoping Process:
-ps
+root@idUbuntu:/# ps
 
 save id number:
-kill id-number
+root@idUbuntu:/# kill id-number
 
 Managing Users:
 root@idUbuntu:/# useradd -m Kimia
@@ -49,3 +49,5 @@ root@idUbuntu:/# cat /etc/passwd
 Result:
 ... [In here is another users]
 Kimia:x:1000:1000::/home/Kimia:/bin/sh
+
+

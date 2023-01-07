@@ -74,3 +74,11 @@ root@idUbuntu:/#
 
 
 Managing Groups:
+root@idUbuntu:/# groupadd developers
+root@idUbuntu:/# cat /etc/group
+root:x:0:
+...[In here is another groups]
+Kimia:x:1000:
+ariya:x:1001:
+developers:x:1002:
+root@idUbuntu:/# 

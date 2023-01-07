@@ -97,3 +97,5 @@ for searching a user, What groups is she a member of?
 root@idUbuntu:/# groups Kimia
 Kimia : Kimia developers
 root@idUbuntu:/# 
+
+File Permissions

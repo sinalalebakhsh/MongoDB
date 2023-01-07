@@ -29,3 +29,10 @@ echo $PATH
 
 Session Variables: this Variable is only available in the current terminal session.
 export DATA_USER=sinalalebakhsh
+
+
+Scan Process:
+ps
+
+Sleep with maintain terminal for continue: we have to use &
+sleep 100 &

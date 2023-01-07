@@ -121,3 +121,6 @@ ariya@idDocker:/home$
 
 SLOTION:
 root@idUbuntu:/home# chmod o+x deploy.sh 
+
+ALSO: RESULT: is't execute for all groups i think so...
+root@idUbuntu:/home# chmod og+x+w deploy.sh 

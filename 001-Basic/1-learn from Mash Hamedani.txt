@@ -36,3 +36,9 @@ ps
 
 Sleep with maintain terminal for continue: we have to use &
 sleep 100 &
+
+for stoping Process:
+ps
+
+save id number:
+kill id-number

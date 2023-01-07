@@ -42,3 +42,10 @@ ps
 
 save id number:
 kill id-number
+
+Managing Users:
+root@idUbuntu:/# useradd -m Kimia
+root@idUbuntu:/# cat /etc/passwd
+Result:
+... [In here is another users]
+Kimia:x:1000:1000::/home/Kimia:/bin/sh

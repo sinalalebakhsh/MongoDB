@@ -1,0 +1,126 @@
+Start:2023.1.6
+
+This Command run without stop:
+root@idUbuntu:/# mkdir test ; cd test ; echo Done
+
+If this command fails, the other commands will not get executed:
+root@idUbuntu:/# mkdir test && cd test && echo Done
+
+Pip first coomand and result give it to seccond:
+root@idUbuntu:/# ls /bin | less 
+
+just show it 15 lines in first result:
+root@idUbuntu:/# ls /bin | head -n 15
+
+Rest up the mulltiple commands, and dont be a long: 
+root@idUbuntu:/# mkdir Sina;\
+cd Sina;\
+echo Done;\
+touch text.txt;
+
+Print All Environment Variables:
+root@idUbuntu:/# printenv
+
+also for show path:
+root@idUbuntu:/# printenv PATH
+
+Or:
+root@idUbuntu:/# echo $PATH
+
+Session Variables: this Variable is only available in the current terminal session.
+root@idUbuntu:/# export DATA_USER=sinalalebakhsh
+
+
+Scan Process:
+root@idUbuntu:/# ps
+
+Sleep with maintain terminal for continue: we have to use &
+root@idUbuntu:/# sleep 100 &
+
+for stoping Process:
+root@idUbuntu:/# ps
+
+save id number:
+root@idUbuntu:/# kill id-number
+
+Managing Users:
+root@idUbuntu:/# useradd -m Kimia
+root@idUbuntu:/# cat /etc/passwd
+RESULT:
+... [In here is another users]
+Kimia:x:1000:1000::/home/Kimia:/bin/sh
+
+
+useradd VS. adduser
+RESULT:
+root@idUbuntu:/# adduser Linaa
+Adding user `Linaa' ...
+Adding new group `Linaa' (1001) ...
+Adding new user `Linaa' (1001) with group `Linaa' ...
+Creating home directory `/home/Linaa' ...
+Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for Linaa
+Enter the new value, or press ENTER for the default
+        Full Name []: Linaa Lalebakhsh
+        Room Number []: 123456
+        Work Phone []: 1234567
+        Home Phone []: 12345678
+        Other []: 
+Is the information correct? [Y/n] y
+root@idUbuntu:/# 
+
+
+Managing Groups:
+root@idUbuntu:/# groupadd developers
+root@idUbuntu:/# cat /etc/group
+root:x:0:
+...[In here is another groups]
+Kimia:x:1000:
+ariya:x:1001:
+developers:x:1002:
+root@idUbuntu:/# 
+
+for add user in a group:
+root@idUbuntu:/# usermod -G developers Kimia
+root@idUbuntu:/# cat /etc/passwd | grep Kimia
+root@idUbuntu:/# grep Kimia /etc/passwd
+Kimia:x:1000:1000::/home/Kimia:/bin/sh
+root@idUbuntu:/# 
+OR:
+root@idUbuntu:/# cat /etc/passwd | grep Kimia 
+Kimia:x:1000:1000::/home/Kimia:/bin/sh
+
+for searching a user, What groups is she a member of?
+root@idUbuntu:/# groups Kimia
+Kimia : Kimia developers
+root@idUbuntu:/# 
+
+File Permissions
+root@idUbuntu:/# cd /home/
+root@idUbuntu:/home# echo echo hello > deploy.sh
+root@idUbuntu:/home# cat deploy.sh 
+echo hello
+root@idUbuntu:/home# ls -l
+-rw-r--r-- 1 root  root    11 Jan  7 20:14 deploy.sh
+root@idUbuntu:/home# ./deploy.sh
+bash: ./deploy.sh: Permission denied
+root@idUbuntu:/home# chmod u+x deploy.sh 
+root@idUbuntu:/home# ls -l
+-rwxr--r-- 1 root  root    11 Jan  7 20:14 deploy.sh
+root@idUbuntu:/home# ./deploy.sh
+hello
+
+If other user want to execute this: 
+RESULT
+ariya@idDocker:/home$ ./deploy.sh
+bash: ./deploy.sh: Permission denied
+ariya@idDocker:/home$ 
+
+SLOTION:
+root@idUbuntu:/home# chmod o+x deploy.sh 
+
+ALSO: RESULT: is't execute for all groups i think so...
+root@idUbuntu:/home# chmod og+x+w deploy.sh 

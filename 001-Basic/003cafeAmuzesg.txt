@@ -1,51 +1,11 @@
-Start:2023.1.11 21Dey1401
+Start:2023.1.11 22Dey1401 panjshanbe
 
-______________________________________________________
-Ubuntu@User:~/Desktop/TheLinuxCommandLine$ uname -a
-Linux sinalalebakhsh 5.15.0-57-generic #63-Ubuntu SMP Thu Nov 24 13:43:17 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
-
-______________________________________________________
-Ubuntu@User:~/Desktop/TheLinuxCommandLine$ cat /etc/os-release 
-PRETTY_NAME="Ubuntu 22.04.1 LTS"
-NAME="Ubuntu"
-VERSION_ID="22.04"
-VERSION="22.04.1 LTS (Jammy Jellyfish)"
-VERSION_CODENAME=jammy
-ID=ubuntu
-ID_LIKE=debian
-HOME_URL="https://www.ubuntu.com/"
-SUPPORT_URL="https://help.ubuntu.com/"
-BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
-PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
-UBUNTU_CODENAME=jammy
-
-______________________________________________________
-For More than Information from OS INSTALL screenfetch
-Ubuntu@User:~/Desktop/TheLinuxCommandLine$ sudo apt install screen fetch
-______________________________________________________
-than write command:
-Ubuntu@User:~/Desktop/TheLinuxCommandLine$ screenfetch 
-                          ./+o+-       Ubuntu@User
-                  yyyyy- -yyyyyy+      OS: Ubuntu 22.04 jammy
-               ://+//////-yyyyyyo      Kernel: x86_64 Linux 5.15.0-57-generic
-           .++ .:/++++++/-.+sss/`      Uptime: 3h 4m
-         .:++o:  /++++++++/:--:/-      Packages: 2244
-        o:+o+:++.`..```.-/oo+++++/     Shell: bash 5.1.16
-       .:+o:+o/.          `+sssoo+/    Resolution: 1920x1080
-  .++/+:+oo+o:`             /sssooo.   DE: GNOME 41.7
- /+++//+:`oo+o               /::--:.   WM: Mutter
- \+/+o+++`o++o               ++////.   WM Theme: Adwaita
-  .++.o+++oo+:`             /dddhhh.   GTK Theme: Yaru-magenta-dark [GTK2/3]
-       .+.o+oo:.          `oddhhhh+    Icon Theme: Yaru-magenta
-        \+.++o+o``-````.:ohdhhhhh+     Font: Ubuntu 11
-         `:o+++ `ohhhhhhhhyo++os:      Disk: 56G / 348G (17%)
-           .o:`.syhhhhhhh/.oo++o`      CPU: Intel Core i5-6200U @ 4x 2.8GHz [35.0°C]
-               /osyyyyyyo++ooo+++/     GPU: HD Graphics 520
-                   ````` +oo+++o\:     RAM: 3146MiB / 15868MiB
-                          `oo++.  
-                          
-                          
-
-
-
+_____________________________________________________________________
+For show version:
+Ubuntu@User:~/Desktop/TheLinuxCommandLine$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 22.04.1 LTS
+Release:	22.04
+Codename:	jammy
 

@@ -1,4 +1,4 @@
-
+man ls > 002-Morteza-sudoer.ir/002-ls.txt 
 
 LS(1)                                                                         User Commands                                                                        LS(1)
 

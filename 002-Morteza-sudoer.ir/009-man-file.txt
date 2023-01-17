@@ -1,3 +1,11 @@
+Add example:
+User@local:$ file 002-Morteza-sudoer.ir/009-man-file.txt 
+002-Morteza-sudoer.ir/009-man-file.txt: Unicode text, UTF-8 text
+------------------------------------------------------------------------
+
+
+
+
 FILE(1)                                                                BSD General Commands Manual                                                               FILE(1)
 
 NAME

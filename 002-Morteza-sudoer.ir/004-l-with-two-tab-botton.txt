@@ -32,3 +32,14 @@ ld.bfd                       linux-version                loweb                 
 ldconfig                     listres                      lowntfs-3g                   lspci                        
 ldconfig.real                ll                           lowriter                     lspcmcia                     
 ldd                          ln                           lp                           lspgpot 
+
+
+
+Or
+
+User@Local:~/Desktop/TheLinuxCommandLine$ w
+w                     wc                    which                 whoami                wish8.6               wpa_supplicant        
+wait                  wdctl                 which.debianutils     whoopsie              word-list-compress    write                 
+wall                  wget                  while                 whoopsie-preferences  wpa_action            write.ul              
+watch                 whatis                whiptail              wipefs                wpa_cli               wscat                 
+watchgnupg            whereis               who                   wish                  wpa_passphrase        wsdump  

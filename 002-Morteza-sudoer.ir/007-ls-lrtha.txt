@@ -1,3 +1,6 @@
+When write this shows => List Sorted and Hedden files
+
+
 User@Local:/boot$ ls -lrtha
 total 157M
 drwx------  2 root root 4.0K Dec 31  1969 efi

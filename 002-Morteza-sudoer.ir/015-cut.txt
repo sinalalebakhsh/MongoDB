@@ -71,3 +71,15 @@ SEE ALSO
        or available locally via: info '(coreutils) cut invocation'
 
 GNU coreutils 8.32                                                            February 2022                                                                       CUT(1)
+
+
+
+
+Example: 
+cut -d# /etc/services  -f1
+
+tcpmux		1/tcp				
+echo		7/tcp
+...         .....
+خیلی زیاد بود حذفشون کردم
+It's to lonng, So I delete that

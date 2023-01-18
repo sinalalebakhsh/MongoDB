@@ -55,3 +55,23 @@ semanage.conf
 
 /etc/wpa_supplicant:
 action_wpa.sh  functions.sh  ifupdown.sh
+
+
+another Example:
+
+                ?si*
+                asina
+                ssizxc
+                qsilzjk
+                1si
+                4si
+
+
+                ??si*
+                12silxcv
+                frsinalalkasd
+
+                *si???
+                asdsi123
+                asdasdsiggg
+                asdasdsibcx

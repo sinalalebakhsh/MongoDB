@@ -1,3 +1,10 @@
+For search in less press / than write, than with End and Home bottom go down Or up to selections
+
+
+
+
+
+
 LESS(1)                                                                  General Commands Manual                                                                 LESS(1)
 
 NAME

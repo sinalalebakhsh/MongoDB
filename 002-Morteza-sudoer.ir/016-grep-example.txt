@@ -5,3 +5,12 @@ xmpp-client	5222/tcp	jabber-client	# Jabber Client Connection
 dcap		22125/tcp			# dCache Access Protocol
 gsidcap		22128/tcp			# GSI dCache Access Protocol
 wnn6		22273/tcp			# wnn6
+
+==============================================================================
+Example 2 :: + -n New Line 
+grep -n 22 etc/services
+24:ssh		22/tcp				# SSH Remote Login Protocol
+225:xmpp-client	5222/tcp	jabber-client	# Jabber Client Connection
+276:dcap		22125/tcp			# dCache Access Protocol
+277:gsidcap		22128/tcp			# GSI dCache Access Protocol
+278:wnn6		22273/tcp			# wnn6

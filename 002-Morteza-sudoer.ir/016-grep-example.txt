@@ -1,0 +1,7 @@
+Example 1 ::
+grep 22 etc/services
+ssh		22/tcp				# SSH Remote Login Protocol
+xmpp-client	5222/tcp	jabber-client	# Jabber Client Connection
+dcap		22125/tcp			# dCache Access Protocol
+gsidcap		22128/tcp			# GSI dCache Access Protocol
+wnn6		22273/tcp			# wnn6

@@ -78,4 +78,33 @@ grep  "^#" etc/services
 
 
 ______________________________________________________________________________
-Example  :: + -v dont show every-thing in "X"  
+6:: + -v dont show every-thing in "X"  
+
+
+
+
+______________________________________________________________________________
+Example 7 :: + grep "^$" /address/anything/write  = Delete to show empty lines
+grep -v "^$" etc/services  
+# Network services, Internet style
+#
+# Updated from https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml .
+#
+# New ports will be added on request if they have been officially assigned
+# by IANA and used in the real-world or are needed by a debian package.
+# If you need a huge list of used numbers please install the nmap package.
+#
+# UNIX specific services
+#
+
+
+
+
+
+
+
+
+
+
+
+

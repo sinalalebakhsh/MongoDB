@@ -17,3 +17,12 @@ grep -n 22 etc/services
 
 ______________________________________________________________________________
 Example 2 :: + -i = Ignore Case  
+grep -in com etc/services
+43:acr-nema	104/tcp		dicom		# Digital Imag. & Comm. 300
+104:biff		512/udp		comsat
+151:#> community.
+207:distcc		3632/tcp			# distributed compiler
+214:remctl		4373/tcp		# Remote Authenticated Command Service
+273:dicom		11112/tcp
+341:clc-build-daemon 8990/tcp			# Common lisp build daemon
+

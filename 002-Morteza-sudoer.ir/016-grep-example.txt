@@ -16,7 +16,7 @@ grep -n 22 etc/services
 278:wnn6		22273/tcp			# wnn6
 
 ______________________________________________________________________________
-Example 2 :: + -i = Ignore Case  
+Example 3 :: + -i = Ignore Case  
 grep -in com etc/services
 43:acr-nema	104/tcp		dicom		# Digital Imag. & Comm. 300
 104:biff		512/udp		comsat
@@ -25,4 +25,17 @@ grep -in com etc/services
 214:remctl		4373/tcp		# Remote Authenticated Command Service
 273:dicom		11112/tcp
 341:clc-build-daemon 8990/tcp			# Common lisp build daemon
+
+______________________________________________________________________________
+Example 4 :: + -i = Ignore Case  
+grep -in sta etc/services
+7:# If you need a huge list of used numbers please install the nmap package.
+14:systat		11/tcp		users
+17:netstat		15/tcp
+216:ntske		4460/tcp	# Network Time Security Key Establishment
+
+______________________________________________________________________________
+
+
+
 

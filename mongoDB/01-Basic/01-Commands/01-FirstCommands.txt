@@ -2,6 +2,34 @@ sudo mongod --config /etc/mongod.conf
 mongosh
 
 
+
+On Linux or macOS, you can add the following line to your shell configuration file (e.g., ~/.bashrc, ~/.zshrc):
+    In terminal:
+    1- export PATH="/path/to/mongodb/bin:$PATH"
+    2- Restart Your Terminal
+
+Test in terminal: 
+    mongod
+    this should be open
+IF close after huge JSON ... {{{...}}}{"t":{"$date":"2023-12-02T01:45:05.350-05:00"},"s":"I",  "c":"NETWORK",  "id":4915701, "ctx":"main","msg":"Initialized wire specificat:
+    sudo mkdir -p /data/db
+    OR
+    sudo chown -R $(whoami) /data/db
+
+*** Specify a Different Data Directory: don't recommend ***
+    mongod --dbpath /path/to/your/data/directory
+
+
+
+for Create a person
+curl -X POST -H "Content-Type: application/json" -d '{"name": "John Doe", "email": "john.doe@example.com"}' http://localhost:8080/people
+
+
+
+
+
+
+
 Terminal:
 Database lists: 
     show dbs

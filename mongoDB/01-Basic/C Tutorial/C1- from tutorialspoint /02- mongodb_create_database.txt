@@ -1,0 +1,22 @@
+Source:
+https://www.tutorialspoint.com/mongodb/mongodb_create_database.htm
+
+to use a database:
+    use mydb
+    switched to db mydb
+
+to check your currently selected database:
+    db
+    mydb
+
+to check your databases list
+    show dbs
+    local     0.78125GB
+    test      0.23012GB
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+
+1- Pull the MongoDB Docker Image
+    docker pull mongodb/mongodb-community-server
+
+
+2- Run the Image as a Container
+    docker run --name mongo -d mongodb/mongodb-community-server:latest
+
+
+Install a Specific Version of MongoDB:
+    docker run --name mongo -d mongodb/mongodb-community-server:5.0-ubuntu2004
+
+
+3- Check that the Container is Running
+    docker container ls
+
+
+4- Connect to the MongoDB Deployment with mongosh
+    docker exec -it mongo mongosh
+
+
+5- Validate Your Deployment
+    db.runCommand({hello: 1})
+result:
+    {
+        isWritablePrimary: true,
+        topologyVersion: {
+            processId: ObjectId("63c00e27195285e827d48908"),
+            counter: Long("0")
+    },
+        maxBsonObjectSize: 16777216,
+        maxMessageSizeBytes: 48000000,
+        maxWriteBatchSize: 100000,
+        localTime: ISODate("2023-01-12T16:51:10.132Z"),
+        logicalSessionTimeoutMinutes: 30,
+        connectionId: 18,
+        minWireVersion: 0,
+        maxWireVersion: 20,
+        readOnly: false,
+        ok: 1
+    }
+
+
+Next Steps (Optional):
+
+1- Download and install Cosign
+For installation instructions, see the Cosign GitHub repository.
+    https://github.com/sigstore/cosign
+
+Sina LalehBakhsh:
+    https://github.com/AcronProjectGroup/cosign
+
+
+2- Download the MongoDB Server container image's public key
+    curl https://cosign.mongodb.com/server.pem > server.pem
+
+
+3- Verify the signature
+Run the following command to verify the signature by tag:
+
+
+
+
+Source: https://docs.sigstore.dev/system_config/installation/
+Installation
+With Go 1.20+
+If you have Go 1.20+, you can directly install Cosign by running:
+
+    go install github.com/sigstore/cosign/v2/cmd/cosign@latest
+    
+The resulting binary will be placed at $GOPATH/bin/cosign (or $GOBIN/cosign, if set).
+With the Cosign binary or rpm/dpkg package
+Download the binary for your platform from the Cosign releases page.
+
+Alpine Linux
+If you are using Alpine Linux edge, with the community repository enabled, you can install cosign by running:
+
+    apk add cosign
+
+
+# binary
+    curl -O -L "https://github.com/sigstore/cosign/releases/latest/download/cosign-linux-amd64"
+    sudo mv cosign-linux-amd64 /usr/local/bin/cosign
+    sudo chmod +x /usr/local/bin/cosign
+
+# rpm
+    LATEST_VERSION=$(curl https://api.github.com/repos/sigstore/cosign/releases/latest | grep tag_name | cut -d : -f2 | tr -d "v\", ")
+    curl -O -L "https://github.com/sigstore/cosign/releases/latest/download/cosign-${LATEST_VERSION}.x86_64.rpm"
+    sudo rpm -ivh cosign-${LATEST_VERSION}.x86_64.rpm
+    
+# dkpg
+    LATEST_VERSION=$(curl https://api.github.com/repos/sigstore/cosign/releases/latest | grep tag_name | cut -d : -f2 | tr -d "v\", ")
+    curl -O -L "https://github.com/sigstore/cosign/releases/latest/download/cosign_${LATEST_VERSION}_amd64.deb"
+    sudo dpkg -i cosign_${LATEST_VERSION}_amd64.deb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

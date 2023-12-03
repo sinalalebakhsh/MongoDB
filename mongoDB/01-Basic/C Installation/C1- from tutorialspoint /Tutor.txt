@@ -1,0 +1,49 @@
+Source:
+https://www.tutorialspoint.com/mongodb/mongodb_environment.htm
+
+
+
+Install MongoDB on Ubuntu
+1- Run the following command to import the MongoDB public GPG key:
+    sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+
+2- Create a /etc/apt/sources.list.d/mongodb.list file using the following command:
+    echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' 
+   | sudo tee /etc/apt/sources.list.d/mongodb.list
+
+
+3- Now issue the following command to update the repository:
+    sudo apt-get update
+
+
+ANOTHER:
+1- Next install the MongoDB by using the following command:
+    Next install the MongoDB by using the following command
+
+
+Start MongoDB:
+    sudo service mongodb start
+
+
+Stop MongoDB:
+    sudo service mongodb stop
+
+
+Restart MongoDB:
+    sudo service mongodb restart
+
+
+To use MongoDB run the following command:
+    mongo
+Result:
+    This will connect you to running MongoDB instance.
+
+
+
+
+
+
+
+
+
+
